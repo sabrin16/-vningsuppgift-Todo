@@ -82,13 +82,6 @@ function togleComplete(id) {
     saveTodos();
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-
-document.querySelectorAll('.complete-button').forEach(function(button) {
-    button.style.display = 'none';
-    });
-});
-
 // Ta bort todo från listan 
 function removeTodo(id) {
     todos = todos.filter(todo => todo.id != id);
